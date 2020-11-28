@@ -23,6 +23,15 @@ body h4{
   color: #FFD366;
 }
 
+/*不要顯示上下箭頭 input number*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+
 .inputText input{
   background-color: rgba(255,255,255,0.5);
   border: solid 2px #FFD366;
@@ -35,41 +44,6 @@ body h4{
 .inputBtn{
   margin-left: 53px;
   float: left;
-}
-.inputBtn .result{
-  color: #31BAF9;
-  font-size: 32px;
-  float: left;
-  margin: 40px 0 0 10px;
-}
-.inputBtn .box{
-  float: left;
-  position: relative;
-  width: 120px;
-  height: 120px;
-   border-radius: 100px;
-
-  text-align: center;
-}
-.inputBtn .value{
-  margin-top: 55px;
-  font-size: 32px;  
-  line-height: 1px;
-}
-.inputBtn .bmi{
-  font-size: 14px;  
-}
-.inputBtn .img{
-  position: absolute;
-  left: 90px;
-  bottom: -10px;
-  width: 30px;
-  height: 30px;
-  background-image: url(img/icons_loop.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 100px;
-  cursor: pointer;
 }
 
 .btn{
@@ -107,37 +81,6 @@ body h4{
   text-align: center;
 }
 
-.main .txt1{
-  background: #86D73F;
-  box-shadow: 2px 0 3px 0 rgba(133,215,63,0.29);
-  width: 7px;
-}
-.main .txt2{
-  background: #31BAF9;
-  box-shadow: 2px 0 3px 0 rgba(49,186,249,0.29);
-  width: 7px;
-}
-.main .txt3{
-  background: #FF982D;
-  box-shadow: 2px 0 3px 0 rgba(255,152,45,0.29);
-  width: 7px;
-}
-.main .txt4{
-  background: #FF6C02;
-  box-shadow: 2px 0 3px 0 rgba(255,108,2,0.29);
-  width: 7px;
-}
-.main .txt5{
-  background: #FF6C02;
-  box-shadow: 2px 0 3px 0 rgba(255,108,2,0.29);
-  width: 7px;
-}
-.main .txt6{
-  background: #FF1200;
-  box-shadow: 2px 0 3px 0 rgba(255,17,0,0.29);
-  width: 7px;
-}
-
 .footer{
   height: 90px;
   background: #FFD366;
@@ -148,4 +91,106 @@ body h4{
 .footer img{
   width: 55px;
   height: 55px;  
+}
+
+.msg{
+  color: red;
+  font-size: 24px;
+}
+
+
+.inputBtn .result{
+  font-size: 32px;
+  float: left;
+  margin: 40px 0 0 10px;
+}
+.inputBtn .box{
+  float: left;
+  position: relative;
+  width: 120px;
+  height: 120px;
+   border-radius: 100px;
+  text-align: center;
+}
+.inputBtn .value{
+  margin-top: 55px;
+  font-size: 32px;  
+  line-height: 1px;
+}
+.inputBtn .bmi{
+  font-size: 14px;  
+}
+.inputBtn .img{
+  position: absolute;
+  left: 90px;
+  bottom: -10px;
+  width: 30px;
+  height: 30px;
+  background-image: url(img/icons_loop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+
+/* 文色顏色 */
+.box-green p, .result-green{
+  color: #86D73F;
+}
+.box-green{
+  border: 6px solid #86D73F;
+}
+.img-green{
+  background-color: #86D73F;
+}
+.main .green{
+  background: #86D73F;
+  box-shadow: 2px 0 3px 0 rgba(133,215,63,0.29);
+  width: 7px;
+}
+
+.box-blue p, .result-blue{
+  color: #31BAF9;
+}
+.box-blue{
+  border: 6px solid #31BAF9;
+}
+.img-blue{
+  background-color: #31BAF9;
+}
+.main .blue{
+  background: #31BAF9;
+  box-shadow: 2px 0 3px 0 rgba(49,186,249,0.29);
+  width: 7px;
+}
+
+.box-orange p, .result-orange{
+  color: #FF6C02;
+}
+.box-orange{
+  border: 6px solid #FF6C02;
+}
+.img-orange{
+  background-color: #FF6C02;
+}
+.main .orange{
+  background: #FF6C02;
+  box-shadow: 2px 0 3px 0 rgba(255,108,2,0.29);
+  width: 7px;
+}
+
+.box-red p, .result-red{
+  color: #FF1200;
+}
+.box-red{
+  border: 6px solid #FF1200;
+}
+.img-red{
+  background-color: #FF1200;
+}
+.main .red{
+  background: #FF1200;
+  box-shadow: 2px 0 3px 0 rgba(255,17,0,0.29);
+  width: 7px;
 }
