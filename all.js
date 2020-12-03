@@ -103,7 +103,7 @@ function btnChange(BMI, result){
   // let imgclick = document.querySelector('.img');
   // imgclick.addEventListener('click',function(e){window.location.reload();});
 
-  // 按重整圖片的話變回「看結果」以且清空欄位資料...重整後的按鈕按了都沒反應
+  // 按重整圖片的話變回「看結果」而且清空欄位資料，並重新監聽按鈕事件
   let imgclick = document.querySelector('.img');
   imgclick.addEventListener('click',Change)
   function Change(){
@@ -113,8 +113,7 @@ function btnChange(BMI, result){
     let btnR = document.querySelector('.btn');
     btnR.addEventListener('click', clickBtn);
   };
-  
-  
+    
   /* 助教的寫法是在html上分別做「看結果」和「顯示結果」
   然後用下面兩行來控制顯示及隱藏 display:none;
   statusBtn.classList.add("hidebtn");
